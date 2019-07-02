@@ -1,0 +1,13 @@
+user tracking is the process of keep the user information in multiple pages or request,
+when ever an user submits  any value through a form to any servlet then the value can be used in the servlet by using getParameter() method of request.
+when the user provides a new request the the value of previous request can't be available in the destination page or servlet of the request.
+
+the http is a stateless protocol
+this is the nature of state less protocol
+the state of previous request can be available to the new request with the help of user tracking.
+the user tracking can be done by using as follows.
+ 1 > URL Rewritting |both in html
+ 2 > hidden fields  |
+ 3 > cookie
+ 4 > session
+  

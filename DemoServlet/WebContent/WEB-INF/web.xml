@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>DemoServlet</display-name>
+	<servlet>
+		<servlet-name>fs</servlet-name>
+		<servlet-class>com.ds.demo.FirstServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>price</servlet-name>
+		<servlet-class>com.ds.urlrewitting.Price</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>conform</servlet-name>
+		<servlet-class>com.ds.urlrewitting.Conform</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>p</servlet-name>
+		<servlet-class>com.ds.hiddenField.Price</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>c</servlet-name>
+		<servlet-class>com.ds.hiddenField.Conform</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>create</servlet-name>
+		<servlet-class>com.ds.cookie.sessionvariable.Create</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>buy</servlet-name>
+		<servlet-class>com.ds.cookie.sessionvariable.Buy</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>session</servlet-name>
+		<servlet-class>com.ds.session.SessionTrack</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>user</servlet-name>
+		<servlet-class>com.ds.page.scope.UserNo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>u</servlet-name>
+		<servlet-class>com.ds.application.scope.User</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>w</servlet-name>
+		<servlet-class>com.ds.application.scope.Welcome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>u</servlet-name>
+		<url-pattern>/u</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>w</servlet-name>
+		<url-pattern>/w</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>/userNo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>session</servlet-name>
+		<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>create</servlet-name>
+		<url-pattern>/create</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>buy</servlet-name>
+		<url-pattern>/buy</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>c</servlet-name>
+		<url-pattern>/c</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>p</servlet-name>
+		<url-pattern>/p</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>conform</servlet-name>
+		<url-pattern>/conform</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>price</servlet-name>
+		<url-pattern>/price</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>fs</servlet-name>
+		<url-pattern>/fs</url-pattern>
+	</servlet-mapping>
+
+</web-app>
